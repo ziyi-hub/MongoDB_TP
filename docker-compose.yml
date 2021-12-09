@@ -19,13 +19,9 @@ services:
   mongo:
     image: mongo
     container_name: mongo
-    environment:
-      MONGO_INITDB_DATABASE: mongodb
-      MONGO_INITDB_ROOT_USERNAME: mongo
-      MONGO_INITDB_ROOT_PASSWORD: mongo
     volumes:
-      - ./mongo-volume:/data/db
-    working_dir: /data/db
+      - ./data:/var/data
+    working_dir: /var/data
     ports:
       - '27017:27017'
     networks:
