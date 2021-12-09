@@ -1,0 +1,5 @@
+/mongo-volume/
+/src/vendor/
+/var/
+/src/composer.lock
+/.idea/

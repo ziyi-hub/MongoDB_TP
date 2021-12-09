@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+  php:
+    container_name: php_mongo
+    image: canals/php:8.0
+    ports:
+      - '12080:80'
+      - '12443:443'
+    volumes:
+      - ./public:/var/www/html
+      - ./src:/var/www/src
+    working_dir: /var/www/src
+    networks:
+      - catamongo.net
+    links:
+      - mongo:mongo.db
+
+  mongo:
+    image: mongo
+    container_name: mongo
+    environment:
+      MONGO_INITDB_DATABASE: mongodb
+      MONGO_INITDB_ROOT_USERNAME: mongo
+      MONGO_INITDB_ROOT_PASSWORD: mongo
+    volumes:
+      - ./mongo-volume:/data/db
+    working_dir: /data/db
+    ports:
+      - '27017:27017'
+    networks:
+      - catamongo.net
+
+  mongo-express:
+    image: mongo-express:latest
+    container_name: mongo_express
+    ports:
+      - '8081:8081'
+    networks:
+      - catamongo.net
+
+networks:
+  catamongo.net:
+    driver: bridge
