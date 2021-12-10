@@ -1,7 +1,7 @@
 db.createUser (
     {
         user : "mongo",
-        pwd : "mongo",
+        pwd : "mongopass",
         roles : [
             {
                 role : "readWrite", db : "mongodb"
@@ -9,3 +9,5 @@ db.createUser (
         ]
     }
 )
+
+db.auth('mongo', 'mongopass')
