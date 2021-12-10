@@ -13,15 +13,21 @@ services:
     working_dir: /var/www/src
     networks:
       - catamongo.net
-    links:
-      - mongo:mongo.db
+    depends_on:
+      - mongo
 
   mongo:
     image: mongo
     container_name: mongo
+    environment:
+      MONGO_INITDB_DATABASE: mongodb
+      MONGO_INITDB_ROOT_USERNAME: mongo
+      MONGO_INITDB_ROOT_PASSWORD: mongopass
+    restart: always
     volumes:
-      - ./data:/var/data
-    working_dir: /var/data
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - ./mongo-volume:/data/db
+    working_dir: /data/db
     ports:
       - '27017:27017'
     networks:
@@ -30,10 +36,20 @@ services:
   mongo-express:
     image: mongo-express:latest
     container_name: mongo_express
+    environment:
+      ME_CONFIG_MONGODB_SERVER: mongo
+      ME_CONFIG_MONGODB_AUTH_DATABASE: admin
+      ME_CONFIG_MONGODB_AUTH_USERNAME: mongo
+      ME_CONFIG_MONGODB_AUTH_PASSWORD: mongopass
+      ME_CONFIG_BASICAUTH_USERNAME: mongo
+      ME_CONFIG_BASICAUTH_PASSWORD: mongopass
     ports:
       - '8081:8081'
+    depends_on:
+      - mongo
     networks:
       - catamongo.net
+    restart: unless-stopped
 
 networks:
   catamongo.net:
