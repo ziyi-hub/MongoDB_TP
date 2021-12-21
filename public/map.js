@@ -62,32 +62,56 @@ function getListParkings()
             JSON.parse(listParkings).forEach(parkings => {
                 let couleur = 'red';
                 let text = '2';
-                let gold = 0;
+                let total = 0;
                 for (let i = 0; i < 21; i++)
                 {
-                    if (parkings[i]["COMMUNE"] === "Nancy"){
-                        gold++;
+                    if(parkings[i]["COMMUNE"] === "Nancy")
+                    {
+                        total++;
                     }
+                    else if(parkings[i]["COMMUNE"] === "Essey")
+                    {
+                        total++;
+                    }
+                    else if(parkings[i]["COMMUNE"] === "Vandoeuvre")
+                    {
+                        total++;
+                    }
+                    else if(parkings[i]["COMMUNE"] === "Tomblaine")
+                    {
+                        total++;
+                    }
+
                     let communes = parkings[i]["COMMUNE"];
                     switch (communes)
                     {
                         case "Essey":
-                            couleur = 'dodgerblue';
-                            text = '2';
+                            for (let i = 1; i <= total; i++)
+                            {
+                                couleur = 'dodgerblue';
+                                text = i.toString();
+                            }
                             break;
                         case "Vandoeuvre":
-                            couleur = 'mediumpurple';
-                            text = '2';
+                            for (let i = 1; i <= total; i++)
+                            {
+                                couleur = 'mediumpurple';
+                                text = i.toString();
+                            }
                             break;
                         case "Nancy":
-                            for (let i = 1; i < gold; i++){
+                            for (let i = 1; i <= total; i++)
+                            {
                                 couleur = 'gold';
                                 text = i.toString();
                             }
                             break;
                         case "Tomblaine":
-                            couleur = 'mediumseagreen';
-                            text = '2';
+                            for (let i = 1; i <= total; i++)
+                            {
+                                couleur = 'mediumseagreen';
+                                text = i.toString();
+                            }
                             break;
                     }
 
