@@ -27,7 +27,7 @@ function getMarker(latLong, contentString, couleur, text){
     });
 }
 
-function position(lat, long, nom, adresse, places, capacite)
+function position(lat, long, nom, adresse, places, capacite, couleur, text)
 {
     let latLong = {lat: lat, lng: long};
     let popup = new google.maps.InfoWindow();
@@ -45,7 +45,7 @@ function position(lat, long, nom, adresse, places, capacite)
         "</div>" +
         "</div>";
 
-    google.maps.event.addListener(getMarker(latLong, contentString, "black", "1"), "click", function(){
+    google.maps.event.addListener(getMarker(latLong, contentString, couleur, text), "click", function(){
         popup.setContent(this.content);
         popup.open(map, this);
     });
@@ -59,15 +59,30 @@ function getListParkings()
         if (xmlhttp.readyState === 4) {
             let listParkings = this.responseText.split("<!DOCTYPE html>")[0];
             initialize();
-
             JSON.parse(listParkings).forEach(parkings => {
-                position(
-                    parkings["geometry"]["y"],
-                    parkings["geometry"]["x"],
-                    parkings["attributes"]["NOM"],
-                    parkings["attributes"]["ADRESSE"],
-                    parkings["attributes"]["PLACES"],
-                    parkings["attributes"]["CAPACITE"]);
+                for (let i = 0; i < 21; i++){
+                    if (parkings[i]["COMMUNE"] === "Essey"){
+                        position(
+                            parkings[i]["geometry"]["y"],
+                            parkings[i]["geometry"]["x"],
+                            parkings[i]["NOM"],
+                            parkings[i]["ADRESSE"],
+                            parkings[i]["PLACES"],
+                            parkings[i]["CAPACITE"],
+                            "red", "1"
+                        );
+                    }else if (parkings[i]["COMMUNE"] === "Vandoeuvre"){
+                        position(
+                            parkings[i]["geometry"]["y"],
+                            parkings[i]["geometry"]["x"],
+                            parkings[i]["NOM"],
+                            parkings[i]["ADRESSE"],
+                            parkings[i]["PLACES"],
+                            parkings[i]["CAPACITE"],
+                            "pruple", "1"
+                        );
+                    }
+                }
             });
         }
     }
