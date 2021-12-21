@@ -31,7 +31,10 @@ function getMarker(latLong, contentString, couleur, text){
 function position(lat, long, nom, adresse, places, capacite, commentaire, couleur, text)
 {
     let latLong = {lat: lat, lng: long};
-    let popup = new google.maps.InfoWindow();
+    let infoBubble = new InfoBubble({
+        minWidth: 50,
+        minHeight: 100,
+    });
 
     const contentString =
         '<div id="content">' +
@@ -42,14 +45,18 @@ function position(lat, long, nom, adresse, places, capacite, commentaire, couleu
         "ADRESSE: " + adresse + "</br>" +
         "PLACES: " + places + "</br>" +
         "CAPACITE: " + capacite + "</br>" +
-        "COMMENTAIRE: " + commentaire +
         "</p>" +
         "</div>" +
         "</div>";
 
+    const com = "<p>" + commentaire + "</p>";
+
+    infoBubble.addTab('Informations', contentString);
+    infoBubble.addTab('Commentaires ', com);
+
     google.maps.event.addListener(getMarker(latLong, contentString, couleur, text), "click", function(){
-        popup.setContent(this.content);
-        popup.open(map, this);
+        infoBubble.open(map, this);
+
     });
 }
 
