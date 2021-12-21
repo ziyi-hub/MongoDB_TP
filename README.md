@@ -7,7 +7,6 @@
 </ol>
 
 
-
 <h1>Consignes d'installation</h1>
 
 <ol>
@@ -26,6 +25,10 @@
   <li>Lancez l'application sur navigateur <code>http://localhost:12080</code></li>
   <li>Vous pouvez maitenant profiter de l'application</li>
 </ol>
+
+
+<h1>Consignes de test du projet</h1>
+<ol><li>Afin de tester le projet, d'abord vous devez vous déplacer dans le répertoire "src" et puis tapez cette commande <code>vendor/bin/phpunit --color tests/tests/mongoTest.php</code></li></ol>
 
 
 <h1>Lien utiles</h1>
