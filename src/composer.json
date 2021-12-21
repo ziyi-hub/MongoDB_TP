@@ -15,7 +15,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Helmich\\MongoMock\\Tests\\": "tests"
+      "tests\\": "./tests"
     }
   },
   "scripts": {
