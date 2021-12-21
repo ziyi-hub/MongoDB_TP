@@ -26,7 +26,7 @@
       "ADRESSE": "Rue Charles Keller",
       "PLACES": 29,
       "CAPACITE": null,
-      "COMMUNE": null,
+      "COMMUNE": "Tomblaine",
       "geometry": {
         "x": 6.1755509281030987,
         "y": 48.703848482187603
@@ -37,7 +37,7 @@
       "ADRESSE": "Boulevard Joffre",
       "PLACES": 300,
       "CAPACITE": 450,
-      "COMMUNE": null,
+      "COMMUNE": "Nancy",
       "geometry": {
         "x": 6.1794564225121329,
         "y": 48.686630790633089
@@ -48,7 +48,7 @@
       "ADRESSE": "Place Henry Mengin",
       "PLACES": 0,
       "CAPACITE": 343,
-      "COMMUNE": null,
+      "COMMUNE": "Nancy",
       "geometry": {
         "x": 6.1816790463629179,
         "y": 48.689344305393064
@@ -59,7 +59,7 @@
       "ADRESSE": "Rue Dom Calmet",
       "PLACES": 12,
       "CAPACITE": 205,
-      "COMMUNE": null,
+      "COMMUNE": "Nancy",
       "geometry": {
         "x": 6.1810281588372664,
         "y": 48.691587647764059
@@ -70,7 +70,7 @@
       "ADRESSE": "Rue Mazagran",
       "PLACES": 162,
       "CAPACITE": 648,
-      "COMMUNE": null,
+      "COMMUNE": "Nancy",
       "geometry": {
         "x": 6.1757361799074921,
         "y": 48.690088214167439
@@ -81,7 +81,7 @@
       "ADRESSE": "Rue du Grand Rabbin Haguenauer",
       "PLACES": 375,
       "CAPACITE": 466,
-      "COMMUNE": null,
+      "COMMUNE": "Nancy",
       "geometry": {
         "x": 6.1796100088581172,
         "y": 48.687787335628109
@@ -92,7 +92,7 @@
       "ADRESSE": "Rue Jacques Bellange",
       "PLACES": 217,
       "CAPACITE": 295,
-      "COMMUNE": null,
+      "COMMUNE": "Nancy",
       "geometry": {
         "x": 6.1735336912475356,
         "y": 48.68585656828219
@@ -103,7 +103,7 @@
       "ADRESSE": "Rue Emilie du Chatelet",
       "PLACES": 149,
       "CAPACITE": 519,
-      "COMMUNE": null,
+      "COMMUNE": "Tomblaine",
       "geometry": {
         "x": 6.1958919376867261,
         "y": 48.695298083887955
@@ -114,7 +114,7 @@
       "ADRESSE": "74 Quai Claude le Lorrain",
       "PLACES": 166,
       "CAPACITE": 241,
-      "COMMUNE": null,
+      "COMMUNE": "Nancy",
       "geometry": {
         "x": 6.1707076271278432,
         "y": 48.696988327008107
@@ -125,7 +125,7 @@
       "ADRESSE": "23 Places des Vosges",
       "PLACES": 54,
       "CAPACITE": 197,
-      "COMMUNE": null,
+      "COMMUNE": "Nancy",
       "geometry": {
         "x": 6.1882267902231431,
         "y": 48.684685237596106
@@ -136,7 +136,7 @@
       "ADRESSE": "6 Rue Claude Charles",
       "PLACES": 38,
       "CAPACITE": 383,
-      "COMMUNE": null,
+      "COMMUNE": "Nancy",
       "geometry": {
         "x": 6.1849443364253576,
         "y": 48.692216862543113
@@ -147,7 +147,7 @@
       "ADRESSE": "Rue des Soeurs Macarons",
       "PLACES": 57,
       "CAPACITE": 209,
-      "COMMUNE": null,
+      "COMMUNE": "Nancy",
       "geometry": {
         "x": 6.184439359956837,
         "y": 48.689243348227677
@@ -158,7 +158,7 @@
       "ADRESSE": "Rue Saint-Leon",
       "PLACES": 109,
       "CAPACITE": 224,
-      "COMMUNE": null,
+      "COMMUNE": "Nancy",
       "geometry": {
         "x": 6.1727798469176918,
         "y": 48.68920975126067
@@ -169,7 +169,7 @@
       "ADRESSE": "32 Rue des Fabriques",
       "PLACES": 350,
       "CAPACITE": 600,
-      "COMMUNE": null,
+      "COMMUNE": "Nancy",
       "geometry": {
         "x": 6.1894047802360479,
         "y": 48.687314989036842
@@ -180,7 +180,7 @@
       "ADRESSE": "Centre Commercial Saint-Sebastien",
       "PLACES": 206,
       "CAPACITE": 1200,
-      "COMMUNE": null,
+      "COMMUNE": "Nancy",
       "geometry": {
         "x": 6.1817369571434533,
         "y": 48.68729748700634
@@ -191,7 +191,7 @@
       "ADRESSE": "Terrasse de la Pépinière",
       "PLACES": 9,
       "CAPACITE": 195,
-      "COMMUNE": null,
+      "COMMUNE": "Nancy",
       "geometry": {
         "x": 6.1841811388515833,
         "y": 48.694597472820668
@@ -202,7 +202,7 @@
       "ADRESSE": "Place Carnot",
       "PLACES": 99,
       "CAPACITE": 371,
-      "COMMUNE": null,
+      "COMMUNE": "Nancy",
       "geometry": {
         "x": 6.1781381074680031,
         "y": 48.69322213174933
@@ -213,7 +213,7 @@
       "ADRESSE": "Cours Léopold",
       "PLACES": 75,
       "CAPACITE": 400,
-      "COMMUNE": null,
+      "COMMUNE": "Nancy",
       "geometry": {
         "x": 6.1762485453637765,
         "y": 48.695384785489381
@@ -224,7 +224,7 @@
       "ADRESSE": "Avenue de Bourgogne",
       "PLACES": 131,
       "CAPACITE": 530,
-      "COMMUNE": null,
+      "COMMUNE": "Vandoeuvre",
       "geometry": {
         "x": 6.1462929460409672,
         "y": 48.649070095998177
