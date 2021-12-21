@@ -8,6 +8,24 @@ function initialize()
     map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
 
+function getMarker(latLong, contentString, couleur, text){
+    return new google.maps.Marker({
+        position: latLong,
+        map: map,
+        content: contentString,
+        icon: {
+            path: google.maps.SymbolPath.CIRCLE,
+            fillColor: couleur,
+            fillOpacity: .9,
+            scale: 10,
+            strokeWeight: 1
+        },
+        label: {
+            color: 'white',
+            text: text
+        }
+    });
+}
 
 function position(lat, long, nom, adresse, places, capacite)
 {
@@ -27,13 +45,7 @@ function position(lat, long, nom, adresse, places, capacite)
         "</div>" +
         "</div>";
 
-    let marker = new google.maps.Marker ({
-        position: latLong,
-        map: map,
-        content: contentString
-    });
-
-    google.maps.event.addListener(marker, "click", function(){
+    google.maps.event.addListener(getMarker(latLong, contentString, "black", "1"), "click", function(){
         popup.setContent(this.content);
         popup.open(map, this);
     });
