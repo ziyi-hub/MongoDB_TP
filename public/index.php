@@ -19,7 +19,7 @@ if (!($exists))
 {
     $db->createCollection('parkingCollection');
 
-    $db->selectCollection('parkingCollection')->insertOne($data);
+    $db->selectCollection('parkingCollection')->insertMany($data);
 }
 
 $parkings = $db->parkingCollection->find();
