@@ -59,11 +59,69 @@ function getListParkings()
         if (xmlhttp.readyState === 4) {
             let listParkings = this.responseText.split("<!DOCTYPE html>")[0];
             initialize();
+            console.log(JSON.parse(listParkings));
             JSON.parse(listParkings).forEach(parkings => {
                 let couleur = 'red';
                 let text = '2';
                 let total = 0;
-                for (let i = 0; i < 21; i++)
+                    console.log(parkings["COMMUNE"]);
+
+                    if (parkings["COMMUNE"] === "Nancy")
+                    {
+                        total++;
+                    } else if (parkings["COMMUNE"] === "Essey") {
+                        total++;
+                    } else if (parkings["COMMUNE"] === "Vandoeuvre") {
+                        total++;
+                    } else if (parkings["COMMUNE"] === "Tomblaine") {
+                        total++;
+                    }
+
+
+                let communes = parkings["COMMUNE"];
+                switch (communes)
+                {
+                    case "Essey":
+                        for (let i = 1; i <= total; i++)
+                        {
+                            couleur = 'dodgerblue';
+                            text = i.toString();
+                        }
+                        break;
+                    case "Vandoeuvre":
+                        for (let i = 1; i <= total; i++)
+                        {
+                            couleur = 'mediumpurple';
+                            text = i.toString();
+                        }
+                        break;
+                    case "Nancy":
+                        for (let i = 1; i <= total; i++)
+                        {
+                            couleur = 'gold';
+                            text = i.toString();
+                        }
+                        break;
+                    case "Tomblaine":
+                        for (let i = 1; i <= total; i++)
+                        {
+                            couleur = 'mediumseagreen';
+                            text = i.toString();
+                        }
+                        break;
+                }
+
+                position(
+                    parkings["geometry"]["y"],
+                    parkings["geometry"]["x"],
+                    parkings["NOM"],
+                    parkings["ADRESSE"],
+                    parkings["PLACES"],
+                    parkings["CAPACITE"],
+                    couleur,
+                    text
+                );
+                /*for (let i = 0; i < 21; i++)
                 {
                     if(parkings[i]["COMMUNE"] === "Nancy")
                     {
@@ -125,7 +183,7 @@ function getListParkings()
                         couleur,
                         text
                     );
-                }
+                }*/
             });
         }
     }
