@@ -60,28 +60,41 @@ function getListParkings()
             let listParkings = this.responseText.split("<!DOCTYPE html>")[0];
             initialize();
             JSON.parse(listParkings).forEach(parkings => {
-                for (let i = 0; i < 21; i++){
-                    if (parkings[i]["COMMUNE"] === "Essey"){
-                        position(
-                            parkings[i]["geometry"]["y"],
-                            parkings[i]["geometry"]["x"],
-                            parkings[i]["NOM"],
-                            parkings[i]["ADRESSE"],
-                            parkings[i]["PLACES"],
-                            parkings[i]["CAPACITE"],
-                            "red", "1"
-                        );
-                    }else if (parkings[i]["COMMUNE"] === "Vandoeuvre"){
-                        position(
-                            parkings[i]["geometry"]["y"],
-                            parkings[i]["geometry"]["x"],
-                            parkings[i]["NOM"],
-                            parkings[i]["ADRESSE"],
-                            parkings[i]["PLACES"],
-                            parkings[i]["CAPACITE"],
-                            "pruple", "1"
-                        );
+                let couleur = 'red';
+                let text = '2';
+                for (let i = 0; i < 21; i++)
+                {
+                    let communes = parkings[i]["COMMUNE"];
+                    switch (communes)
+                    {
+                        case "Essey":
+                            couleur = 'dodgerblue';
+                            text = '2';
+                            break;
+                        case "Vandoeuvre":
+                            couleur = 'mediumpurple';
+                            text = '2';
+                            break;
+                        case "Nancy":
+                            couleur = 'gold';
+                            text = '2';
+                            break;
+                        case "Tomblaine":
+                            couleur = 'mediumseagreen';
+                            text = '2';
+                            break;
                     }
+
+                    position(
+                        parkings[i]["geometry"]["y"],
+                        parkings[i]["geometry"]["x"],
+                        parkings[i]["NOM"],
+                        parkings[i]["ADRESSE"],
+                        parkings[i]["PLACES"],
+                        parkings[i]["CAPACITE"],
+                        couleur,
+                        text
+                    );
                 }
             });
         }
