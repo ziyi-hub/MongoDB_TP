@@ -2,11 +2,25 @@
   "require": {
     "ext-mongodb": "*",
     "mongodb/mongodb": "^1.10",
-    "ext-json": "*"
+    "ext-json": "*",
+    "phpunit/phpunit": "^9.5"
   },
   "autoload": {
     "psr-4": {
       "mongoDB\\": "./src"
     }
+  },
+  "require-dev": {
+    "helmich/mongomock": "^2.6"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Helmich\\MongoMock\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": [
+      "phpunit"
+    ]
   }
 }
