@@ -34,29 +34,30 @@ function position(lat, long, nom, adresse, places, capacite, commentaire, couleu
     let infoBubble = new InfoBubble({
         minWidth: 50,
         minHeight: 100,
+        backgroundColor: 'lightblue',
+        tabPadding: 20
     });
 
-    const contentString =
+    const content=
         '<div id="content">' +
         '<div id="siteNotice"></div>' +
         "<h1 id='firstHeading' class='firstHeading'>" + nom + "</h1>" +
         '<div id="bodyContent">' +
-        "<p>" +
-        "ADRESSE: " + adresse + "</br>" +
-        "PLACES: " + places + "</br>" +
-        "CAPACITE: " + capacite + "</br>" +
+        "<p><b>" +
+        "Adresse : " + "</b>"+ adresse + "</br>" + "<b>" +
+        "Places : "+ "</b>" + places + "</br>" + "<b>" +
+        "Capacité : " + "</b>"+ capacite + "</br>" +
         "</p>" +
         "</div>" +
         "</div>";
 
     const com = "<p>" + commentaire + "</p>";
 
-    infoBubble.addTab('Informations', contentString);
+    infoBubble.addTab('Informations', content);
     infoBubble.addTab('Commentaires ', com);
 
-    google.maps.event.addListener(getMarker(latLong, contentString, couleur, text), "click", function(){
+    google.maps.event.addListener(getMarker(latLong, content, couleur, text), "click", function(){
         infoBubble.open(map, this);
-
     });
 }
 
@@ -76,16 +77,22 @@ function getListParkings()
                 let couleur = 'red';
                 let text = '2';
 
-                    if (parkings["COMMUNE"] === "Nancy")
-                    {
-                        nbNancy++;
-                    } else if (parkings["COMMUNE"] === "Essey") {
-                        nbEssey++;
-                    } else if (parkings["COMMUNE"] === "Vandoeuvre") {
-                        nbVandoeuvre++;
-                    } else if (parkings["COMMUNE"] === "Tomblaine") {
-                        nbTomblaine++;
-                    }
+                if (parkings["COMMUNE"] === "Nancy")
+                {
+                    nbNancy++;
+                }
+                else if (parkings["COMMUNE"] === "Essey")
+                {
+                    nbEssey++;
+                }
+                else if (parkings["COMMUNE"] === "Vandoeuvre")
+                {
+                    nbVandoeuvre++;
+                }
+                else if (parkings["COMMUNE"] === "Tomblaine")
+                {
+                    nbTomblaine++;
+                }
 
                 let communes = parkings["COMMUNE"];
                 switch (communes)
