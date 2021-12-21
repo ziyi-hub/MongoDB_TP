@@ -5,6 +5,7 @@
       "PLACES": 140,
       "CAPACITE": 240,
       "COMMUNE": "Essey",
+      "COMMENTAIRE": "Très bon parking, très sécurisé et extrêmement bien situé au centre-ville de Nancy.",
       "geometry": {
         "x": 6.2252968151767618,
         "y": 48.702018030790775
@@ -16,6 +17,7 @@
       "PLACES": null,
       "CAPACITE": null,
       "COMMUNE": "Vandoeuvre",
+      "COMMENTAIRE": "Un parking au centre ville pratique pour un arrêt court et gratuit",
       "geometry": {
         "x": 6.144662673632979,
         "y": 48.648186363233108
@@ -27,6 +29,7 @@
       "PLACES": 29,
       "CAPACITE": null,
       "COMMUNE": "Tomblaine",
+      "COMMENTAIRE": "Place Stanislas plus belle place d'Europe.",
       "geometry": {
         "x": 6.1755509281030987,
         "y": 48.703848482187603
@@ -38,6 +41,7 @@
       "PLACES": 300,
       "CAPACITE": 450,
       "COMMUNE": "Nancy",
+      "COMMENTAIRE": "Peu de places et très sales.",
       "geometry": {
         "x": 6.1794564225121329,
         "y": 48.686630790633089
@@ -49,6 +53,7 @@
       "PLACES": 0,
       "CAPACITE": 343,
       "COMMUNE": "Nancy",
+      "COMMENTAIRE": "Parking abordable et bien placé",
       "geometry": {
         "x": 6.1816790463629179,
         "y": 48.689344305393064
@@ -60,6 +65,7 @@
       "PLACES": 12,
       "CAPACITE": 205,
       "COMMUNE": "Nancy",
+      "COMMENTAIRE": "Super ! Parking relais très grand et pratique lorsqu'on arrive de l'extérieur. Il faut avoir ou acheter un titre de transport pour pouvoir y entrer. Il y a toujours un tram qui attends au terminus.",
       "geometry": {
         "x": 6.1810281588372664,
         "y": 48.691587647764059
@@ -71,6 +77,7 @@
       "PLACES": 162,
       "CAPACITE": 648,
       "COMMUNE": "Nancy",
+      "COMMENTAIRE": "Très pratique au coeur de la ville",
       "geometry": {
         "x": 6.1757361799074921,
         "y": 48.690088214167439
@@ -82,6 +89,7 @@
       "PLACES": 375,
       "CAPACITE": 466,
       "COMMUNE": "Nancy",
+      "COMMENTAIRE": "Dans mon top 5 des plus belle place de france",
       "geometry": {
         "x": 6.1796100088581172,
         "y": 48.687787335628109
@@ -93,6 +101,7 @@
       "PLACES": 217,
       "CAPACITE": 295,
       "COMMUNE": "Nancy",
+      "COMMENTAIRE": "La circulation est très difficile, passage et places sont étroites",
       "geometry": {
         "x": 6.1735336912475356,
         "y": 48.68585656828219
@@ -104,6 +113,7 @@
       "PLACES": 149,
       "CAPACITE": 519,
       "COMMUNE": "Tomblaine",
+      "COMMENTAIRE": "Parking à proximité de la place Stanislas où il y a généralement toujours de la place.",
       "geometry": {
         "x": 6.1958919376867261,
         "y": 48.695298083887955
@@ -115,6 +125,7 @@
       "PLACES": 166,
       "CAPACITE": 241,
       "COMMUNE": "Nancy",
+      "COMMENTAIRE": "Parking très pratique pour se rendre en ville ou sur la place Stanislas",
       "geometry": {
         "x": 6.1707076271278432,
         "y": 48.696988327008107
@@ -126,6 +137,7 @@
       "PLACES": 54,
       "CAPACITE": 197,
       "COMMUNE": "Nancy",
+      "COMMENTAIRE": "parking bien situé au centre et pres du marché de Noël",
       "geometry": {
         "x": 6.1882267902231431,
         "y": 48.684685237596106
@@ -137,6 +149,7 @@
       "PLACES": 38,
       "CAPACITE": 383,
       "COMMUNE": "Nancy",
+      "COMMENTAIRE": "Si seulement on avait les mêmes prix à Paris, pratique commode, permet vraiment de consommer en centre ville, bien vu",
       "geometry": {
         "x": 6.1849443364253576,
         "y": 48.692216862543113
@@ -148,6 +161,7 @@
       "PLACES": 57,
       "CAPACITE": 209,
       "COMMUNE": "Nancy",
+      "COMMENTAIRE": "Parking central idéal pour y garer son véhicule en soirée. Prix hyper intéressant",
       "geometry": {
         "x": 6.184439359956837,
         "y": 48.689243348227677
@@ -159,6 +173,7 @@
       "PLACES": 109,
       "CAPACITE": 224,
       "COMMUNE": "Nancy",
+      "COMMENTAIRE": "Mal indiqué à l'intérieur... Passage auto. trop étroit.. Position parking  0kay",
       "geometry": {
         "x": 6.1727798469176918,
         "y": 48.68920975126067
@@ -170,6 +185,7 @@
       "PLACES": 350,
       "CAPACITE": 600,
       "COMMUNE": "Nancy",
+      "COMMENTAIRE": "Toujours  le meilleur moyen de passer une journée sur Nancy.",
       "geometry": {
         "x": 6.1894047802360479,
         "y": 48.687314989036842
@@ -181,6 +197,7 @@
       "PLACES": 206,
       "CAPACITE": 1200,
       "COMMUNE": "Nancy",
+      "COMMENTAIRE": "J'y travaille donc c'est cool!",
       "geometry": {
         "x": 6.1817369571434533,
         "y": 48.68729748700634
@@ -192,6 +209,7 @@
       "PLACES": 9,
       "CAPACITE": 195,
       "COMMUNE": "Nancy",
+      "COMMENTAIRE": "Dommage que le prix est changé! Moins attractif que avant!",
       "geometry": {
         "x": 6.1841811388515833,
         "y": 48.694597472820668
@@ -203,6 +221,7 @@
       "PLACES": 99,
       "CAPACITE": 371,
       "COMMUNE": "Nancy",
+      "COMMENTAIRE": "Super ! Parking relais très grand et pratique lorsqu'on arrive de l'extérieur.",
       "geometry": {
         "x": 6.1781381074680031,
         "y": 48.69322213174933
@@ -214,6 +233,7 @@
       "PLACES": 75,
       "CAPACITE": 400,
       "COMMUNE": "Nancy",
+      "COMMENTAIRE": "Super ! Parking relais très grand et pratique lorsqu'on arrive de l'extérieur.",
       "geometry": {
         "x": 6.1762485453637765,
         "y": 48.695384785489381
@@ -225,6 +245,7 @@
       "PLACES": 131,
       "CAPACITE": 530,
       "COMMUNE": "Vandoeuvre",
+      "COMMENTAIRE": "Super ! Parking relais très grand et pratique lorsqu'on arrive de l'extérieur.",
       "geometry": {
         "x": 6.1462929460409672,
         "y": 48.649070095998177
