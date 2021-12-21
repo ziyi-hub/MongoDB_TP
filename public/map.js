@@ -34,7 +34,6 @@ function position(lat, long, nom, adresse, places, capacite, commentaire, couleu
     let infoBubble = new InfoBubble({
         minWidth: 50,
         minHeight: 100,
-        backgroundColor: 'lightblue',
         tabPadding: 20
     });
 
