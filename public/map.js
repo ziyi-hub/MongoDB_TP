@@ -62,8 +62,12 @@ function getListParkings()
             JSON.parse(listParkings).forEach(parkings => {
                 let couleur = 'red';
                 let text = '2';
+                let gold = 0;
                 for (let i = 0; i < 21; i++)
                 {
+                    if (parkings[i]["COMMUNE"] === "Nancy"){
+                        gold++;
+                    }
                     let communes = parkings[i]["COMMUNE"];
                     switch (communes)
                     {
@@ -76,8 +80,10 @@ function getListParkings()
                             text = '2';
                             break;
                         case "Nancy":
-                            couleur = 'gold';
-                            text = '2';
+                            for (let i = 1; i < gold; i++){
+                                couleur = 'gold';
+                                text = i.toString();
+                            }
                             break;
                         case "Tomblaine":
                             couleur = 'mediumseagreen';
